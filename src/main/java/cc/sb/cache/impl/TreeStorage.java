@@ -6,18 +6,15 @@ import java.util.Map;
 import java.util.TreeMap;
 
 /**
- * A {@link Storage} tree implementation.
- * As example implementation of different storages.
+ * A Tree {@link Storage} implementation.
  */
-public class TreeStorage<K, V> implements Storage<K, V> {
-
-    private Map<K, V> tree = new TreeMap<K, V>();
+public class TreeStorage<K, V> extends TreeMap<K, V> implements Storage<K, V> {
 
     public void save(K key, V value) {
-        tree.put(key, value);
+        put(key, value);
     }
 
     public V load(K key) {
-        return tree.get(key);
+        return get(key);
     }
 }
