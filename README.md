@@ -57,6 +57,11 @@ public interface Storage<K, V> {
 ```
 
 ### Storage Implementations
+
+#### LruStorage  -  A Least Recently Used Implementation
+#### MruStorage  -  A Most Recently Used Implementation.
+#### TreeStorage -  A Tree Implementation.
+
 Storage implementation can be such as memory storage, file storage, database storage, etc.
 Its implementation depends on your need. For example you can use different memory storages with more or less productive algorithms.
 
